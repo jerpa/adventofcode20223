@@ -1,0 +1,4 @@
+package shared
+
+func DoNothing() {
+}
