@@ -15,13 +15,22 @@ func GetInts(data []string) []int {
 	return result
 }
 
-// GetInt converts a slice of strings to a slice of ints
+// GetInt get the int value of a string
 func GetInt(data string) int {
 	val, err := strconv.Atoi(data)
 	if err != nil {
 		panic(err.Error())
 	}
 	return val
+}
+
+// GetInt64 get the int64 value of a string
+func GetInt64(data string) int64 {
+	val, err := strconv.Atoi(data)
+	if err != nil {
+		panic(err.Error())
+	}
+	return int64(val)
 }
 
 // GetFloats converts a slice of strings to a slice of floats

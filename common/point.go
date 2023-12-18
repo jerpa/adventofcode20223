@@ -1,9 +1,15 @@
 package common
 
+import "fmt"
+
 // Point is a point
 type Point struct {
 	X int
 	Y int
+}
+
+func (p Point) String() string {
+	return fmt.Sprintf("%d,%d", p.X, p.Y)
 }
 
 // Manhattan calculates the Manhattan length for a point
